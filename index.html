@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LCDI Digital Signage</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/HeaderStyling.css"/>
+        <link rel="stylesheet" type="text/css" href="css/MainStyling.css"/>
+        <link rel="stylesheet" type="text/css" href="css/FooterStyling.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="test.css"/> -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/ClockWidget.js"></script>
+        <script type="text/javascript" src="js/WeatherWidget.js"></script>
+        <script type="text/javascript" src="js/ProjectHours.js"></script>
+    </head>
+<body>
+	<div id="header">
+<!----------------------------------------------------------------------->
+<!-------- HEADER BEGINS; ORDER OF ELEMENTS: LOGO, WEATHER, CLOCK. ------>
+<!----------------------------------------------------------------------->
+        <nav>
+            <ul>                
+                <a>
+                    <img id="logo" src="new_lcdi.png" alt="lcdi icon"/>
+                </a>
+                
+<!----------------------------------------------------------------------->		    
+            <div id="right">
+                <div id="weather">    
+                    <span>
+                        <a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:05401.1.99999&bannertypeclick=wu_clean2day" title="Burlington, Vermont Weather Forecast" target="_blank">
+                            <img src="http://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_clean2day_cond&airportcode=KBTV&ForcedCity=Burlington&ForcedState=VT&zip=05401&language=EN" alt="Find more about Weather in Burlington, VT" width="300">
+                        </a>	
+                    </span>
+                </div>
+
+<!----------------------------------------------------------------------->
+           
+            <!-- Clock: date and time. time calls function startTime() above -->              
+                <li>
+                    <div id="clock">	
+                        <div id="date">
+                            <script>
+                            startDate();
+                            </script>
+                        </div>
+                        <br>
+                        <div id="time">
+                            <script>
+                            startTime();
+                            </script>
+                        </div>
+                    </div>
+                </li>
+            
+<!----------------------------------------------------------------------->            
+            </div>
+            </ul>
+        </nav>
+<!----------------------------------------------------------------------->
+<!---------------------------  HEADER ENDS. ----------------------------->
+<!----------------------------------------------------------------------->
+    </div>
+    
+    
+    <main>
+<!-----------------------------------------------------------------------> 
+<!---------- MAIN CONTENT BEGINS. ORDER: (PROJECT HOURS, TWITTER)? ------>
+<!----------------------------------------------------------------------->
+         <div id="tableDiv">
+            <table id="dataTable">
+                <thead>
+                    <tr id="header">
+                        <th> Project Name </th>
+                        <th> Hours Worked </th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+<!----------------------------------------------------------------------->
+<!------------------------ MAIN CONTENT ENDS. --------------------------->
+<!----------------------------------------------------------------------->
+    </main>
+
+
+    <footer>
+<!----------------------------------------------------------------------->
+<!-------------------------- FOOTER BEGINS. ----------------------------->
+<!----------------------------------------------------------------------->
+		<div class="scrollText">
+			<p id="scrollContent"> 
+            || &emsp; Twitter: @ChampForensics &emsp; || &emsp; Facebook: facebook.com/LeahyCenterforDigitalInvestigation &emsp; || &emsp; YouTube: Champ Forensics &emsp; || &emsp; Online: lcdi.champlain.edu &emsp; || &emsp; 
+            <p>
+   		</div> 
+<!----------------------------------------------------------------------->
+<!--------------------------- FOOTER ENDS. ------------------------------>
+<!----------------------------------------------------------------------->
+	</footer>
+</body>
+</html>

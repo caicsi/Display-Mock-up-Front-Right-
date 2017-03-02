@@ -1,0 +1,95 @@
+/*
+potential color palette: background rgb(0, 38, 77) 
+text 1, greyish-green: rgb(98, 153, 152)
+text 2, white
+opaque grey underlay: rgba(26, 26, 26, 0.3)
+opaque white underlay: rgba(135, 135, 135, 0.2)
+- Main color: #00264D
+*/
+
+body nav {
+    background-color: #00264D;
+    display: inline;
+}
+
+
+ul {
+    list-style-type: none;
+    display: inline;
+}
+
+ul li{
+    max-width: 60%;
+    display: inline;
+}
+
+#header {
+	background-color: #00264D;
+
+	height: 100px;
+}
+
+#right {
+	float: right;
+}
+
+/*two day 300 x 100 */
+#weather {
+	display: block;
+	text-align: center; 
+	font-family: sans-serif; 
+	font-size: 12px;
+    float: right;
+    padding: 0px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.#logo {
+    background-color: #00264D;
+    border-radius: 10px;
+    max-width: 25%;
+    max-height 25%;
+    position: absolute;
+}
+
+#clock {
+	font-family: Source Code Pro;
+	color: #83AFAF;
+	padding: 2.5%;
+	max-width: 75%;
+    max-height:100%;
+    float: right;
+}
+
+#date {
+    float: right;
+    max-width: 100%;
+}
+
+#clock #time, #clock #date {
+	text-align: center;
+    float: left;
+}
+
+
+
+body {
+	/*background-image: url("images/bluepattern.jpg"); */
+	background-color: #00264D;
+
+}
+
+
+#right #weather span {
+	background-color: #00264D;
+	display: block !important;
+	width: 320px; 
+	text-align: center; 
+	font-family: sans-serif; 
+	font-size: 12px;
+}
+nav #header #right #weather span img {
+	background-color: #00264D;
+}
+
