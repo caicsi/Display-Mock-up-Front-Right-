@@ -19,43 +19,71 @@
 <!-------- HEADER BEGINS; ORDER OF ELEMENTS: LOGO, WEATHER, CLOCK. ------>
 <!----------------------------------------------------------------------->
         <nav>
-            <ul>                
-                <a>
-                    <img id="logo" src="new_lcdi.png" alt="lcdi icon"/>
-                </a>
-                
-<!----------------------------------------------------------------------->		    
-            <div id="right">
-                <div id="weather">    
-                    <span>
-                        <a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:05401.1.99999&bannertypeclick=wu_clean2day" title="Burlington, Vermont Weather Forecast" target="_blank">
-                            <img src="http://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_clean2day_cond&airportcode=KBTV&ForcedCity=Burlington&ForcedState=VT&zip=05401&language=EN" alt="Find more about Weather in Burlington, VT" width="300">
-                        </a>	
-                    </span>
-                </div>
-
+			<div id="header">
+				<img id = "logo" src="images/new_lcdi.png" alt="lcdi icon"/>
+				<div id="weather-clock">
 <!----------------------------------------------------------------------->
+<!-----------Weather widget, provided by weather underground ------------>
+					<div id="weather">
+						<span style="display: block !important; width: 320px; text-align: center; font-family: sans-serif; font-size: 12px;"><a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:05401.1.99999&bannertypeclick=wu_clean2day" title="Burlington, Vermont Weather Forecast" target="_blank">
+						<img src="http://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_clean2day_cond&airportcode=KBTV&ForcedCity=Burlington&ForcedState=VT&zip=05401&language=EN" alt="Find more about Weather in Burlington, VT" width="300" /></a>	
+					</div>
+					
+<!----------------------------------------------------------------------->
+<!----------------------- Clock: date and time -------------------------->
+					<div id="clock">
+						<div id="date">
+							<script>
+							startDate();
+							</script>
+						</div>
+						<div id="time">
+							<script>
+								startTime();
+							</script>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+            <!-- <ul>                 -->
+                <!-- <a> -->
+                    <!-- <img id="logo" src="images/new_lcdi.png" alt="lcdi icon"/> -->
+                <!-- </a> -->
+                
+<!-- <!----------------------------------------------------------------------->
+            <!-- <div id="right"> -->
+                <!-- <div id="weather">     -->
+                    <!-- <span> -->
+                        <!-- <a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:05401.1.99999&bannertypeclick=wu_clean2day" title="Burlington, Vermont Weather Forecast" target="_blank"> -->
+                            <!-- <img src="http://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_clean2day_cond&airportcode=KBTV&ForcedCity=Burlington&ForcedState=VT&zip=05401&language=EN" alt="Find more about Weather in Burlington, VT" width="300"> -->
+                        <!-- </a>	 -->
+                    <!-- </span> -->
+                <!-- </div> -->
+
+<!-- <!-----------------------------------------------------------------------> 
            
-            <!-- Clock: date and time. time calls function startTime() above -->              
-                <li>
-                    <div id="clock">	
-                        <div id="date">
-                            <script>
-                            startDate();
-                            </script>
-                        </div>
-                        <br>
-                        <div id="time">
-                            <script>
-                            startTime();
-                            </script>
-                        </div>
-                    </div>
-                </li>
+            <!-- <!-- Clock: date and time. time calls function startTime() above -->
+                <!-- <li> -->
+                    <!-- <div id="clock">	 -->
+                        <!-- <div id="date"> -->
+                            <!-- <script> -->
+                            <!-- startDate(); -->
+                            <!-- </script> -->
+                        <!-- </div> -->
+                        <!-- <br> -->
+                        <!-- <div id="time"> -->
+                            <!-- <script> -->
+                            <!-- startTime(); -->
+                            <!-- </script> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                <!-- </li> -->
             
-<!----------------------------------------------------------------------->            
-            </div>
-            </ul>
+<!-- <!----------------------------------------------------------------------->
+            <!-- </div> -->
+            <!-- </ul> -->
         </nav>
 <!----------------------------------------------------------------------->
 <!---------------------------  HEADER ENDS. ----------------------------->

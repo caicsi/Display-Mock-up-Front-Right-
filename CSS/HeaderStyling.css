@@ -1,25 +1,14 @@
 /*
-potential color palette: background rgb(0, 38, 77) 
-text 1, greyish-green: rgb(98, 153, 152)
+potential color palette: background rgb(0, 38, 77) #00264D
+text 1, greyish-green: rgb(98, 153, 152) #629998
 text 2, white
-opaque grey underlay: rgba(26, 26, 26, 0.3)
-opaque white underlay: rgba(135, 135, 135, 0.2)
+opaque grey underlay: rgba(26, 26, 26, 0.3) #1a1a1a
+opaque white underlay: rgba(135, 135, 135, 0.2) #878787
 - Main color: #00264D
 */
 
 body nav {
-    background-color: #00264D;
-    display: inline;
-}
 
-
-ul {
-    list-style-type: none;
-    display: inline;
-}
-
-ul li{
-    max-width: 60%;
     display: inline;
 }
 
@@ -28,8 +17,10 @@ ul li{
 	height: 125px;
 }
 
-#right {
+#weather-clock {
 	float: right;
+	display: flex;
+	padding: 1%;
 }
 
 /*two day 300 x 100 */
@@ -44,43 +35,29 @@ ul li{
     max-width: 100%;
 }
 
-img #logo {
-    background-color: #00264D;
-    border-radius: 10px; 
-    overflow: visible;
-    padding-top: 0;
-    padding-bottom: 0; 
+#logo {
+	padding: 1%;
+	margin-top: 1%;
+	max-width: 60%;
+	max-height: 60%;
 }
 
 #clock {
     font-family: 'Lora', serif;
     letter-spacing: .75px;
 	color: white;
-	padding: 2.5%;
+	padding: 1%;
+	padding-top: 7%;
+	padding-left: 2%;
 	max-width: 75%;
     max-height:100%;
-    left: 1400px;
-    top: -5px;
-    float: left;
-    position: absolute;
+	text-align: center;
+	width: 160px; 
 }
 
 #date {
     max-width: 100%;
 }
-
-#clock #time, #clock #date {
-	text-align: center;
-    float: left;
-}
-
-
-
-body {
-	/*background-image: url("images/bluepattern.jpg"); */
-	background-color: #00264D;
-}
-
 
 #right #weather span {
 	background-color: #00264D;
