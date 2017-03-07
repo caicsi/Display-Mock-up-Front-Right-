@@ -8,10 +8,10 @@ function startTime() {
     //convert to regular time (instead of military time)
     if (hours > 12) {
         hours = hours - 12;
-        period = "P.M.";
+        period = "PM";
     }
     else {
-        period = "A.M.";
+        period = "AM";
     } 
 
     //put zero's in front of minutes and seconds when less than ten

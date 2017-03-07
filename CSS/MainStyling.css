@@ -1,6 +1,7 @@
 /* 1. GENERAL */
 body
 {
+	background-color: #00264D;
     font-family: 'Lora', serif;
     text-rendering: optimizePrecision;
 }
