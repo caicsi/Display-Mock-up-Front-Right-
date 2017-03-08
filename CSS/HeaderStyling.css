@@ -2,53 +2,56 @@
 potential color palette: background rgb(0, 38, 77) #00264D
 text 1, greyish-green: rgb(98, 153, 152) #629998
 text 2, white
-opaque grey underlay: rgba(26, 26, 26, 0.3) #1a1a1a
+opaque grey underlay: rgba(3, 3, 20, 0.3) #141419 with opacity 0.3
 opaque white underlay: rgba(135, 135, 135, 0.2) #878787
 - Main color: #00264D
 */
 
-/* 1A) BODY */ 
 
-body {
-    margin: 0px;
-    border: 10px solid darkgreen;
-}
-
-/* 1B) NAVBAR */
+/* 1) NAVBAR */
 
 nav {
     display: inline;
-    width: 100%;
+    width: 100%; 
 }
 
 /* 2A) HEADER */
 
 #header {
-	background-color: rgba(26, 26, 26, 0.3);
-	height: 15%;
-    border: 5px grey solid;
+	background-color: rgba(3, 3, 20, 0.3);
+	height: 125px;
+    /* border: 5px grey solid; */
 }
 
 /* 3A) LOGO */
 
 #logo {
-	padding: 20px;
-	max-width: 35%;
-	max-height: 15%;
-    width: 33%;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	padding-top: 25px;
+	padding-left: 25px;
+	max-width: 60%;
+	max-height: 60%;
+	filter:brightness(110%);
+	/* border: 3px red solid; */
+	
+	/*padding: 20px;
+    width: 33%;   this will make the logo change size
     height: 100%;
-    border: 3px red solid;
     position: relative;
-    top: 2px;
+    top: 2px; */
 }
 
 /* 4A) WEATHER CLOCK DIV */
 
 #weather-clock {
 	float: right;
-	display: inline-flex;
-    padding: 7.5px;
-    border: 3px cyan solid;
+	/*display: inline-flex;
+    padding: 7.5px; */
+    /* border: 3px cyan solid; */
+	display: flex;
+	padding: 10px;
+	padding-top: 12px;
 }
 
 /* 4B) WEATHER 
@@ -59,10 +62,10 @@ two day 300 x 100 */
 	font-family: sans-serif; 
 	font-size: 12px;
     float: right;
-    padding: 10px;
+    /*padding: 10px; unnecessary if there's padding on weather-clock */ 
     max-height: 100%;
     max-width: 100%;
-    border: 3px red solid;
+    /* border: 3px red solid; */
 }
 
 /* 4C) CLOCK*/
@@ -78,7 +81,7 @@ two day 300 x 100 */
     max-height:100%;
 	text-align: center;
 	width: 160px; 
-    border: 3px red solid;
+    /* border: 3px red solid; */
 }
 
 /* 4D) CLOCK: DATE */
@@ -86,10 +89,6 @@ two day 300 x 100 */
 #date {
     max-width: 100%;
 }
-
-/* 4E) CLOCK: TIME */
-
-#time {}
 
 /* 5A) WEATHER SPAN */
 

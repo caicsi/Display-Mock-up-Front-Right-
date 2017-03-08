@@ -12,8 +12,9 @@
         <script type="text/javascript" src="js/ClockWidget.js"></script>
         <script type="text/javascript" src="js/WeatherWidget.js"></script>
         <script type="text/javascript" src="js/ProjectHours.js"></script>
+		<script type="text/javascript" src = "js/slideshow.js"> </script>
     </head>
-<body>
+<body onLoad="switchImage('slide')"> <!-- onload for slideshow -->
 	<div id="header">
 <!----------------------------------------------------------------------->
 <!-------- HEADER BEGINS; ORDER OF ELEMENTS: LOGO, WEATHER, CLOCK. ------>
@@ -45,45 +46,6 @@
 					</div>
 				</div>
 			</div>
-			
-			
-            <!-- <ul>                 -->
-                <!-- <a> -->
-                    <!-- <img id="logo" src="images/new_lcdi.png" alt="lcdi icon"/> -->
-                <!-- </a> -->
-                
-<!-- <!----------------------------------------------------------------------->
-            <!-- <div id="right"> -->
-                <!-- <div id="weather">     -->
-                    <!-- <span> -->
-                        <!-- <a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:05401.1.99999&bannertypeclick=wu_clean2day" title="Burlington, Vermont Weather Forecast" target="_blank"> -->
-                            <!-- <img src="http://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_clean2day_cond&airportcode=KBTV&ForcedCity=Burlington&ForcedState=VT&zip=05401&language=EN" alt="Find more about Weather in Burlington, VT" width="300"> -->
-                        <!-- </a>	 -->
-                    <!-- </span> -->
-                <!-- </div> -->
-
-<!-- <!-----------------------------------------------------------------------> 
-           
-            <!-- <!-- Clock: date and time. time calls function startTime() above -->
-                <!-- <li> -->
-                    <!-- <div id="clock">	 -->
-                        <!-- <div id="date"> -->
-                            <!-- <script> -->
-                            <!-- startDate(); -->
-                            <!-- </script> -->
-                        <!-- </div> -->
-                        <!-- <br> -->
-                        <!-- <div id="time"> -->
-                            <!-- <script> -->
-                            <!-- startTime(); -->
-                            <!-- </script> -->
-                        <!-- </div> -->
-                    <!-- </div> -->
-                <!-- </li> -->
-            
-<!-- <!----------------------------------------------------------------------->
-            <!-- </div> -->
-            <!-- </ul> -->
         </nav>
 <!----------------------------------------------------------------------->
 <!---------------------------  HEADER ENDS. ----------------------------->
@@ -108,6 +70,7 @@
                 </thead>
             </table>
         </div>
+
 <!----------------------------------------------------------------------->  
         <div id="twitterWidget">    
         
@@ -116,8 +79,13 @@
         </div>
 <!----------------------------------------------------------------------->  
 
-        
-
+		
+		<div id = "container">
+			<div id = "slideShow">
+				<img src="images/img2.jpeg" alt="img" name = "slide" id="slides">
+			</div>
+		</div>
+		
 <!----------------------------------------------------------------------->
 <!------------------------ MAIN CONTENT ENDS. --------------------------->
 <!----------------------------------------------------------------------->
