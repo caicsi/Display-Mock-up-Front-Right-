@@ -7,7 +7,12 @@ opaque white underlay: rgba(135, 135, 135, 0.2) #878787
 - Main color: #00264D
 */
 
+
 /* 1A) BODY */ 
+
+nav {
+
+}
 
 body {
     margin: 0px;
@@ -46,9 +51,11 @@ nav {
 
 #weather-clock {
 	float: right;
-	display: inline-flex;
-    padding: 7.5px;
+	/*display: inline-flex;
+    padding: 7.5px; */
     border: 3px cyan solid;
+	display: flex;
+	padding: 10px;
 }
 
 /* 4B) WEATHER 
@@ -66,6 +73,11 @@ two day 300 x 100 */
 }
 
 /* 4C) CLOCK*/
+#logo {
+	padding: 25px;
+	max-width: 60%;
+	max-height: 60%;
+}
 
 #clock {
     font-family: 'Lora', serif;

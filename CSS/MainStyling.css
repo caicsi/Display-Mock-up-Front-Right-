@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 /* 1A) TABLE GENERAL */
 main {
     border: 6px purple solid;
+	display: flex;
+	padding-top: 20px;
 }
 
 body
@@ -10,14 +13,15 @@ body
     text-rendering: optimizePrecision;
 }
 
+/*PROJECT HOURS */
 table
 {
     border: 3px white solid;
     border-collapse: collapse;
     columns: 2 400px;
     column-rule: 1px solid black;
-    height: 15%;
-    width: 35%;
+    /* height: 15%; */
+    /* width: 35%; */
     position: relative;
     margin-top: 10px;
     margin-bottom: 0px;
@@ -108,6 +112,7 @@ td
     column-rule: 1px solid black;
     border-radius: 1px #343A45 solid;
 }
+<<<<<<< HEAD
 /* 2A) SLIDESHOW */
 
 /* 3A) TWITTER FEED */
@@ -127,3 +132,28 @@ td
     width: inherit;
     height: inherit;
 }
+=======
+
+#tableDiv {
+	height: 900px;
+	width: 700 px;
+}
+
+
+/* SLIDESHOW */
+#container{
+	/*width: 300px;
+	height: auto; */
+	position: relative;
+	margin: auto; 
+}
+#slideShow{
+	height: 90%;
+	width: 100%; 	
+} 
+#slides{
+	margin-top: auto;
+	width: 300px;
+	height: auto;
+}
+>>>>>>> fixed header so it doesn't change size when you expand the window
