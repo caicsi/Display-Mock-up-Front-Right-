@@ -1,4 +1,8 @@
-/* 1. GENERAL */
+/* 1A) TABLE GENERAL */
+main {
+    border: 6px purple solid;
+}
+
 body
 {
 	background-color: #00264D;
@@ -8,7 +12,7 @@ body
 
 table
 {
-    border: 1px solid;
+    border: 3px white solid;
     border-collapse: collapse;
     columns: 2 400px;
     column-rule: 1px solid black;
@@ -20,7 +24,10 @@ table
     margin-left: 100px;
 }
 
-/* 2. HEADER CSS */
+/* 1B) TABLE HEADER */
+#tableHeader {
+    border: 5px white dotted;
+}
 
 th
 {
@@ -37,7 +44,7 @@ th
     vertical-align: middle;
 }
 
-/* 3. BODY CSS */
+/* 1C) TABLE BODY */
 
 tr
 {
@@ -59,7 +66,7 @@ td
     text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
 }
 
-/* 4. ALTERNATING STYLES */
+/* 1D) TABLE ALTERNATING STYLES */
 
 .oddStyling
 {
@@ -100,4 +107,23 @@ td
     animation: float 5s infinite;
     column-rule: 1px solid black;
     border-radius: 1px #343A45 solid;
+}
+/* 2A) SLIDESHOW */
+
+/* 3A) TWITTER FEED */
+#twitterWidget {
+    position: absolute;
+    left: 50%;
+    top: 22%;
+    max-width: 26.5%;
+    max-height: 35%;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border: 3px white solid;
+}
+
+#twitterWidget iframe {
+    width: inherit;
+    height: inherit;
 }

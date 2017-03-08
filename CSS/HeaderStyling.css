@@ -7,40 +7,65 @@ opaque white underlay: rgba(135, 135, 135, 0.2) #878787
 - Main color: #00264D
 */
 
-body nav {
+/* 1A) BODY */ 
 
-    display: inline;
+body {
+    margin: 0px;
+    border: 10px solid darkgreen;
 }
+
+/* 1B) NAVBAR */
+
+nav {
+    display: inline;
+    width: 100%;
+}
+
+/* 2A) HEADER */
 
 #header {
 	background-color: rgba(26, 26, 26, 0.3);
-	height: 125px;
+	height: 15%;
+    border: 5px grey solid;
 }
+
+/* 3A) LOGO */
+
+#logo {
+	padding: 20px;
+	max-width: 35%;
+	max-height: 15%;
+    width: 33%;
+    height: 100%;
+    border: 3px red solid;
+    position: relative;
+    top: 2px;
+}
+
+/* 4A) WEATHER CLOCK DIV */
 
 #weather-clock {
 	float: right;
-	display: flex;
-	padding: 1%;
+	display: inline-flex;
+    padding: 7.5px;
+    border: 3px cyan solid;
 }
 
-/*two day 300 x 100 */
+/* 4B) WEATHER 
+two day 300 x 100 */
 #weather {
 	display: block;
 	text-align: center; 
 	font-family: sans-serif; 
 	font-size: 12px;
     float: right;
-    padding: 0px;
+    padding: 10px;
     max-height: 100%;
     max-width: 100%;
+    border: 3px red solid;
 }
 
-#logo {
-	padding: 1%;
-	margin-top: 1%;
-	max-width: 60%;
-	max-height: 60%;
-}
+/* 4C) CLOCK*/
 
 #clock {
     font-family: 'Lora', serif;
@@ -53,11 +78,20 @@ body nav {
     max-height:100%;
 	text-align: center;
 	width: 160px; 
+    border: 3px red solid;
 }
+
+/* 4D) CLOCK: DATE */
 
 #date {
     max-width: 100%;
 }
+
+/* 4E) CLOCK: TIME */
+
+#time {}
+
+/* 5A) WEATHER SPAN */
 
 #right #weather span {
 	background-color: #00264D;

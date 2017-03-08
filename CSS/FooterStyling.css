@@ -3,20 +3,22 @@ Main references used for this widget:
 - http://www.quackit.com/css/codes/marquees/
 - https://css-tricks.com/snippets/css/keyframe-animation-syntax/
 */
+/* 1A) FOOTER GENERAL */
+
 footer{
     position: fixed;
     bottom: 0px;
-    left: -5px;
-    right: -2px;
+    background-color: rgba(26, 26, 26, 0.5);
+    display: block;
+    width: 100%;
+    left: -2.6px;
+    height: 5%;
+    border: 3px white solid;
 }
 
-@charset "utf-8";
-/* CSS Document
-Main references used for this widget: 
-- http://www.quackit.com/css/codes/marquees/
-- https://css-tricks.com/snippets/css/keyframe-animation-syntax/
-*/
+/* 2A) ANIMATION */
 
+@charset "utf-8";
 
 /* Normal speed animation */
 @-moz-keyframes textAnimation { 
@@ -43,6 +45,8 @@ Main references used for this widget:
 	}
 }
 
+/* 3A) TEXT DIV */
+
 .scrollText {
 /*	Starting position.
 	- Moz = Firefox specific
@@ -66,21 +70,14 @@ Main references used for this widget:
 }
 /* https://wdexplorer.com/20-examples-beautiful-css-typography-design/ */
 
-footer {
-    background-color: rgba(26, 26, 26, 0.5);
-    display: block;
-    width: 100;
-    height: 45px;
-    bottom: 0;
-}
+/* 4A) ACTUAL TEXT */
 
 #scrollContent { 
 	color: white; 
 	font-family: 'Lora', serif;
-    letter-spacing: .5px;
+    letter-spacing: .6px;
 	font-size: 21px; 
 	line-height: 25px;
-    margin-left: 100px;
     display: inline;
     overflow: hidden;
 }
