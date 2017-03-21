@@ -25,7 +25,26 @@
 	/*there isn't a huge difference between these two methods */
     /* border: 5px red solid; */
 }
+@media print {
+.gm-style .gmnoprint, .gmnoprint {
+  display:none
+}
+}
 
+@media screen {
+  .gm-style .gmnoscreen .gmnoscreen {
+	display:none
+	}
+}
+.gm-style {
+	font-family:Roboto,Arial,sans-serif;
+	font-size:11px;
+	font-weight:400;
+	text-decoration:none
+}
+.gm-style img{
+	max-width:none;
+}
 
 /* 2A) TABLE GENERAL */
 main {
