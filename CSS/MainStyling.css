@@ -4,7 +4,10 @@
 	height: auto; */
     position: absolute;
     margin-top: 30px;
-    margin-bottom: 185px;
+    /* margin-bottom: 185px; This was causing the page to have a 
+	scroll bar on the side when the larger photos were displayed. 
+	I didn't see why it was necessary. If you want to add it back in, 
+	I would suggest just making it smaller. */
     left: 4.25%;
     /* border: 5px white solid; */
 }
@@ -22,7 +25,26 @@
 	/*there isn't a huge difference between these two methods */
     /* border: 5px red solid; */
 }
+@media print {
+.gm-style .gmnoprint, .gmnoprint {
+  display:none
+}
+}
 
+@media screen {
+  .gm-style .gmnoscreen .gmnoscreen {
+	display:none
+	}
+}
+.gm-style {
+	font-family:Roboto,Arial,sans-serif;
+	font-size:11px;
+	font-weight:400;
+	text-decoration:none
+}
+.gm-style img{
+	max-width:none;
+}
 
 /* 2A) TABLE GENERAL */
 main {
