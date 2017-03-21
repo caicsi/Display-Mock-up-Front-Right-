@@ -4,7 +4,10 @@
 	height: auto; */
     position: absolute;
     margin-top: 30px;
-    margin-bottom: 185px;
+    /* margin-bottom: 185px; This was causing the page to have a 
+	scroll bar on the side when the larger photos were displayed. 
+	I didn't see why it was necessary. If you want to add it back in, 
+	I would suggest just making it smaller. */
     left: 4.25%;
     /* border: 5px white solid; */
 }
