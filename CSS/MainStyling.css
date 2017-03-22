@@ -25,6 +25,10 @@
 	/*there isn't a huge difference between these two methods */
     /* border: 5px red solid; */
 }
+.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div
+{
+	font-size:10px;
+}
 @media print {
 .gm-style .gmnoprint, .gmnoprint {
   display:none
