@@ -3,20 +3,21 @@
 	/*width: 300px;
 	height: auto; */
     position: absolute;
-    margin-top: 30px;
+    /* margin-top: 30px; moved to slides so it would apply to shuttle as well */
     /* margin-bottom: 185px; This was causing the page to have a 
 	scroll bar on the side when the larger photos were displayed. 
 	I didn't see why it was necessary. If you want to add it back in, 
 	I would suggest just making it smaller. */
-    left: 4.25%;
+    left: 3%;
     /* border: 5px white solid; */
 }
 #slideShow{
-	height: 100%%;
+	height: 100%;
 	width: 99%;
     /* border: 3px black solid; */
 } 
-#slides{
+.slides{
+	margin-top: 80px;
 	/* margin-top: auto; */
 	/* width: 500px; */
 	/* height: auto; */
@@ -49,6 +50,12 @@
 .gm-style img{
 	max-width:none;
 }
+#map_canvas {
+	height: 600px;
+	width: 900px;
+	left: 710px;
+}
+
 
 /* 2A) TABLE GENERAL */
 main {
@@ -60,6 +67,7 @@ main {
 
 body
 {
+	height: 100%;
 	background-color: #083c70;
     font-family: 'Lora', serif;
     text-rendering: optimizePrecision;

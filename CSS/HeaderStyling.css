@@ -70,6 +70,32 @@ two day 300 x 100 */
     /* border: 3px red solid; */
 }
 
+
+ #weather-app{
+	   position: absolute;
+	   left: 1450px;
+	   font-family: 'Roboto';
+	   color: rgb(255,255,255);
+	   font-size: 14pt;
+	   width:250px;
+	   height: 125px;
+		 justify-content: space-around;
+	 }
+	 #weather-info{
+	   display: flex;
+	   flex-direction: column;
+	   justify-content: space-around;
+	 }
+	 #weather-icon img{
+	   width: 100px;
+	 }
+	 #weather-condition{
+	   text-align: center;
+	   font-size: 16pt;
+	   font-weight: bold;
+	 }
+
+
 /* 4C) CLOCK*/
 
 #clock {
